@@ -1,0 +1,39 @@
+[
+  {
+    "ContainingType": "MQMailSender.Controllers.HomeController",
+    "Method": "Get",
+    "RelativePath": "api/Home/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MQMailSender.Controllers.SendEMailController",
+    "Method": "Post",
+    "RelativePath": "SendEMail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailDto",
+        "Type": "MQMailSender.Models.EmailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "SendEmail"
+  }
+]

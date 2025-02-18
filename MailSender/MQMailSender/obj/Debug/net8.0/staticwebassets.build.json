@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "tIci3MYOoLZRAAaZEOeXc8DIH/6boOEn63C2z/KhrRM=",
+  "Source": "MQMailSender",
+  "BasePath": "_content/MQMailSender",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

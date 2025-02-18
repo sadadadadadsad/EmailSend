@@ -1,0 +1,148 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\14011\\source\\repos\\ReceiveTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{05934857-9E1C-49D8-8AEC-904159B6E1B1}|ReceiveTest\\ReceiveTest.csproj|c:\\users\\14011\\source\\repos\\receivetest\\receivetest\\services\\emailservicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05934857-9E1C-49D8-8AEC-904159B6E1B1}|ReceiveTest\\ReceiveTest.csproj|solutionrelative:receivetest\\services\\emailservicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05934857-9E1C-49D8-8AEC-904159B6E1B1}|ReceiveTest\\ReceiveTest.csproj|c:\\users\\14011\\source\\repos\\receivetest\\receivetest\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05934857-9E1C-49D8-8AEC-904159B6E1B1}|ReceiveTest\\ReceiveTest.csproj|solutionrelative:receivetest\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05934857-9E1C-49D8-8AEC-904159B6E1B1}|ReceiveTest\\ReceiveTest.csproj|c:\\users\\14011\\source\\repos\\receivetest\\receivetest\\models\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05934857-9E1C-49D8-8AEC-904159B6E1B1}|ReceiveTest\\ReceiveTest.csproj|solutionrelative:receivetest\\models\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05934857-9E1C-49D8-8AEC-904159B6E1B1}|ReceiveTest\\ReceiveTest.csproj|c:\\users\\14011\\source\\repos\\receivetest\\receivetest\\factory\\emailservicefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05934857-9E1C-49D8-8AEC-904159B6E1B1}|ReceiveTest\\ReceiveTest.csproj|solutionrelative:receivetest\\factory\\emailservicefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05934857-9E1C-49D8-8AEC-904159B6E1B1}|ReceiveTest\\ReceiveTest.csproj|c:\\users\\14011\\source\\repos\\receivetest\\receivetest\\models\\rabbitmqsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05934857-9E1C-49D8-8AEC-904159B6E1B1}|ReceiveTest\\ReceiveTest.csproj|solutionrelative:receivetest\\models\\rabbitmqsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05934857-9E1C-49D8-8AEC-904159B6E1B1}|ReceiveTest\\ReceiveTest.csproj|c:\\users\\14011\\source\\repos\\receivetest\\receivetest\\services\\receivemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05934857-9E1C-49D8-8AEC-904159B6E1B1}|ReceiveTest\\ReceiveTest.csproj|solutionrelative:receivetest\\services\\receivemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05934857-9E1C-49D8-8AEC-904159B6E1B1}|ReceiveTest\\ReceiveTest.csproj|c:\\users\\14011\\source\\repos\\receivetest\\receivetest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05934857-9E1C-49D8-8AEC-904159B6E1B1}|ReceiveTest\\ReceiveTest.csproj|solutionrelative:receivetest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\14011\\source\\repos\\ReceiveTest\\ReceiveTest\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "ReceiveTest\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\14011\\source\\repos\\ReceiveTest\\ReceiveTest\\Services\\EmailService.cs",
+              "RelativeToolTip": "ReceiveTest\\Services\\EmailService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswB8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T09:37:27.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmailDto.cs",
+              "DocumentMoniker": "C:\\Users\\14011\\source\\repos\\ReceiveTest\\ReceiveTest\\Models\\EmailDto.cs",
+              "RelativeDocumentMoniker": "ReceiveTest\\Models\\EmailDto.cs",
+              "ToolTip": "C:\\Users\\14011\\source\\repos\\ReceiveTest\\ReceiveTest\\Models\\EmailDto.cs",
+              "RelativeToolTip": "ReceiveTest\\Models\\EmailDto.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAMwEYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T08:19:29.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RabbitMQSettings.cs",
+              "DocumentMoniker": "C:\\Users\\14011\\source\\repos\\ReceiveTest\\ReceiveTest\\Models\\RabbitMQSettings.cs",
+              "RelativeDocumentMoniker": "ReceiveTest\\Models\\RabbitMQSettings.cs",
+              "ToolTip": "C:\\Users\\14011\\source\\repos\\ReceiveTest\\ReceiveTest\\Models\\RabbitMQSettings.cs",
+              "RelativeToolTip": "ReceiveTest\\Models\\RabbitMQSettings.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA2wAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T07:59:07.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmailServiceBase.cs",
+              "DocumentMoniker": "C:\\Users\\14011\\source\\repos\\ReceiveTest\\ReceiveTest\\Services\\EmailServiceBase.cs",
+              "RelativeDocumentMoniker": "ReceiveTest\\Services\\EmailServiceBase.cs",
+              "ToolTip": "C:\\Users\\14011\\source\\repos\\ReceiveTest\\ReceiveTest\\Services\\EmailServiceBase.cs",
+              "RelativeToolTip": "ReceiveTest\\Services\\EmailServiceBase.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAwE4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T14:04:26.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReceiveMessage.cs",
+              "DocumentMoniker": "C:\\Users\\14011\\source\\repos\\ReceiveTest\\ReceiveTest\\Services\\ReceiveMessage.cs",
+              "RelativeDocumentMoniker": "ReceiveTest\\Services\\ReceiveMessage.cs",
+              "ToolTip": "C:\\Users\\14011\\source\\repos\\ReceiveTest\\ReceiveTest\\Services\\ReceiveMessage.cs",
+              "RelativeToolTip": "ReceiveTest\\Services\\ReceiveMessage.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwDAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T08:08:13.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmailServiceFactory.cs",
+              "DocumentMoniker": "C:\\Users\\14011\\source\\repos\\ReceiveTest\\ReceiveTest\\Factory\\EmailServiceFactory.cs",
+              "RelativeDocumentMoniker": "ReceiveTest\\Factory\\EmailServiceFactory.cs",
+              "ToolTip": "C:\\Users\\14011\\source\\repos\\ReceiveTest\\ReceiveTest\\Factory\\EmailServiceFactory.cs",
+              "RelativeToolTip": "ReceiveTest\\Factory\\EmailServiceFactory.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T08:05:06.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\14011\\source\\repos\\ReceiveTest\\ReceiveTest\\Program.cs",
+              "RelativeDocumentMoniker": "ReceiveTest\\Program.cs",
+              "ToolTip": "C:\\Users\\14011\\source\\repos\\ReceiveTest\\ReceiveTest\\Program.cs",
+              "RelativeToolTip": "ReceiveTest\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T05:59:23.772Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

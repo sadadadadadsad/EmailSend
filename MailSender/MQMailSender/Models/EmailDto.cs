@@ -24,9 +24,10 @@ namespace MQMailSender.Models
         /// </summary>
         public string ToName { get; set; }
         /// <summary>
-        /// 附件地址
+        /// 附件地址 注意json格式需要两个\\进行转义
         /// </summary>
-        public string? Path { get; set; }
+        public string? FilePath { get; set; }
+        public string? FileArray { get; set; }
         /// <summary>
         /// 抄送者地址
         /// </summary>
@@ -71,13 +72,10 @@ namespace MQMailSender.Models
         /// 回复地址
         /// </summary>
         public string? Reply { get; set; }
-
-
         /// <summary>
         /// 读取该路径下的配置文件
         /// </summary>
         /// <param name="configPath">配置文件路径</param>
-        /// <returns></returns>
         public EmailDto Create(string configPath)
         {
             try
@@ -107,23 +105,10 @@ namespace MQMailSender.Models
         /// </summary>
         [JsonProperty]
         public string AuthorizationCode { get; set; }
-
-        /// <summary>
-        /// 是否包含Html代码
-        /// </summary>
-        [JsonProperty]
-        public bool IsHtml { get; set; }
-
         /// <summary>
         /// 发送者显示名
         /// </summary>
         [JsonProperty]
         public string DisplayName { get; set; }
-        /// <summary>
-        /// 是否启用SSL 默认：false 
-        /// 如果启用 端口号要改为加密方式发送的
-        /// </summary>
-        [JsonProperty]
-        public bool EnableSsl { get; set; }
     }
 }

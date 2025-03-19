@@ -32,7 +32,17 @@ namespace ReceiveTest.Models
         /// <summary>
         /// 附件地址
         /// </summary>
-        public string? Path { get; set; }
+        public string? FilePath { get; set; }
+        /// <summary>
+        /// 文件名
+        /// </summary>
+        public string? FileName { get; set; }
+        
+        /// <summary>
+        /// 文件源
+        /// </summary>
+        public byte[] FileArray { get; set; }
+
         /// <summary>
         /// 抄送者地址
         /// </summary>
@@ -117,13 +127,6 @@ namespace ReceiveTest.Models
         /// </summary>
         [JsonProperty]
         public string AuthorizationCode { get; set; }
-
-        /// <summary>
-        /// 是否包含Html代码
-        /// </summary>
-        [JsonProperty]
-        public bool IsHtml { get; set; }
-
         /// <summary>
         /// 发送者显示名
         /// </summary>
@@ -133,8 +136,6 @@ namespace ReceiveTest.Models
         /// 是否启用SSL 默认：false 
         /// 如果启用 端口号要改为加密方式发送的
         /// </summary>
-        [JsonProperty]
-        public bool EnableSsl { get; set; }
     }
 
 

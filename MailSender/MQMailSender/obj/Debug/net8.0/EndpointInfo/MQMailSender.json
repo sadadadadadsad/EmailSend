@@ -84,7 +84,11 @@
             "type": "string",
             "nullable": true
           },
-          "path": {
+          "filePath": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileArray": {
             "type": "string",
             "nullable": true
           },
@@ -128,15 +132,9 @@
             "type": "string",
             "nullable": true
           },
-          "isHtml": {
-            "type": "boolean"
-          },
           "displayName": {
             "type": "string",
             "nullable": true
-          },
-          "enableSsl": {
-            "type": "boolean"
           }
         },
         "additionalProperties": false

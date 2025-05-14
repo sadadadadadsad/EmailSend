@@ -5,35 +5,6 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Home/Get": {
-      "get": {
-        "tags": [
-          "Home"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/SendEMail": {
       "post": {
         "tags": [
@@ -76,14 +47,6 @@
             "type": "string",
             "nullable": true
           },
-          "to": {
-            "type": "string",
-            "nullable": true
-          },
-          "toName": {
-            "type": "string",
-            "nullable": true
-          },
           "filePath": {
             "type": "string",
             "nullable": true
@@ -109,10 +72,6 @@
             "nullable": true
           },
           "htmlBody": {
-            "type": "string",
-            "nullable": true
-          },
-          "body": {
             "type": "string",
             "nullable": true
           },

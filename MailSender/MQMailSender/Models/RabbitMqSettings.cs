@@ -1,6 +1,6 @@
 ﻿namespace MQMailSender.Models
 {
-    public class RabbitMqSettings
+    public class RabbitMQSettings
     {
         public string Hostname { get; set; }
 

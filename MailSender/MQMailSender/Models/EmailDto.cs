@@ -14,15 +14,7 @@ namespace MQMailSender.Models
         /// </summary>
 
         public string? From { get; set; }
-        /// <summary>
-        /// 接收者邮箱（多个用英文“,”号分割）
-        /// </summary>
-        public string? To { get; set; }
 
-        /// <summary>
-        /// 接收者名字
-        /// </summary>
-        public string ToName { get; set; }
         /// <summary>
         /// 附件地址 注意json格式需要两个\\进行转义
         /// </summary>
@@ -40,21 +32,7 @@ namespace MQMailSender.Models
         /// <summary>
         /// 邮箱主题
         /// </summary>
-        public string Subject
-        {
-            get
-            {
-                if (string.IsNullOrEmpty(_subject) && _subject.Length > 15)
-                {
-                    if (string.IsNullOrEmpty(Body = TextBody ?? HtmlBody))
-                    {
-                        return Body.Substring(0, 15);
-                    }
-                }
-                return _subject;
-            }
-            set { _subject = value; }
-        }
+        public string Subject { get; set; }
 
         /// <summary>
         /// 邮箱纯文本内容
@@ -66,7 +44,6 @@ namespace MQMailSender.Models
         /// </summary>
         public string? HtmlBody { get; set; }
 
-        public string? Body { get; set; }
 
         /// <summary>
         /// 回复地址

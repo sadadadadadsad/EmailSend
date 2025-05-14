@@ -1,0 +1,16 @@
+C:\Users\14011\source\repos\HostApp\EmailServerPlugin\bin\Debug\net8.0\appsettings.json
+C:\Users\14011\source\repos\HostApp\EmailServerPlugin\bin\Debug\net8.0\EmailServerPlugin.deps.json
+C:\Users\14011\source\repos\HostApp\EmailServerPlugin\bin\Debug\net8.0\EmailServerPlugin.dll
+C:\Users\14011\source\repos\HostApp\EmailServerPlugin\bin\Debug\net8.0\EmailServerPlugin.pdb
+C:\Users\14011\source\repos\HostApp\EmailServerPlugin\bin\Debug\net8.0\EmailPlugin.Contracts.dll
+C:\Users\14011\source\repos\HostApp\EmailServerPlugin\bin\Debug\net8.0\EmailPlugin.Contracts.pdb
+C:\Users\14011\source\repos\HostApp\EmailServerPlugin\obj\Debug\net8.0\EmailServerPlugin.csproj.AssemblyReference.cache
+C:\Users\14011\source\repos\HostApp\EmailServerPlugin\obj\Debug\net8.0\EmailServerPlugin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\14011\source\repos\HostApp\EmailServerPlugin\obj\Debug\net8.0\EmailServerPlugin.AssemblyInfoInputs.cache
+C:\Users\14011\source\repos\HostApp\EmailServerPlugin\obj\Debug\net8.0\EmailServerPlugin.AssemblyInfo.cs
+C:\Users\14011\source\repos\HostApp\EmailServerPlugin\obj\Debug\net8.0\EmailServerPlugin.csproj.CoreCompileInputs.cache
+C:\Users\14011\source\repos\HostApp\EmailServerPlugin\obj\Debug\net8.0\EmailSer.9B84CCD1.Up2Date
+C:\Users\14011\source\repos\HostApp\EmailServerPlugin\obj\Debug\net8.0\EmailServerPlugin.dll
+C:\Users\14011\source\repos\HostApp\EmailServerPlugin\obj\Debug\net8.0\refint\EmailServerPlugin.dll
+C:\Users\14011\source\repos\HostApp\EmailServerPlugin\obj\Debug\net8.0\EmailServerPlugin.pdb
+C:\Users\14011\source\repos\HostApp\EmailServerPlugin\obj\Debug\net8.0\ref\EmailServerPlugin.dll

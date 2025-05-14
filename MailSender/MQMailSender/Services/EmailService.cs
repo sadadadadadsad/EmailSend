@@ -12,19 +12,22 @@ namespace MQMailSender.Services
     public class EmailService
     {
         private readonly RabbitMQConnectionFactory _connectionFactory;
-        private const int MaxMessageSize = 1024 * 1024 * 15;
+        private const int MaxMessageSize = 1024 * 1024 * 17;
         public EmailService(RabbitMQConnectionFactory connectionFactory)
         {
             _connectionFactory = connectionFactory;
         }
+
+        private const string NormalExchangeName = "EmailNormalExchange";
+
+
+        private const string NormalRoutingName = "EmailNormalRouting";
+
         public async void SendEmail(EmailDto emailDto)
         {
             try
             {
                 using var channel = await _connectionFactory.CreateChannel();
-                await channel.QueueDeclareAsync(queue: "emailQueue", durable: true, exclusive: false, autoDelete: false, arguments: null);
-                await channel.ExchangeDeclareAsync("emailExchange", ExchangeType.Fanout, true, false, null);
-                await channel.QueueBindAsync("emailQueue", "emailExchange", "emailRoute", null);
                 var jsonEmailDto = JsonConvert.SerializeObject(emailDto);
                 var dToBody = Encoding.UTF8.GetBytes(jsonEmailDto);
                 string filePath = emailDto.FilePath;
@@ -52,27 +55,25 @@ namespace MQMailSender.Services
                 //传输附件
                 if (filePath != "string" && filePath != null)
                 {
-                    
                         var bytes = File.ReadAllBytes(filePath);
                         var chunks = SplitFile(bytes);
                         foreach (var chunk in chunks)
                         {
                             byte[] msgWithChecksum = AddCheckMsgToChunk(chunk);
+                            await channel.BasicPublishAsync(NormalExchangeName, NormalRoutingName, false, attachmentProps, msgWithChecksum);
+                        await Task.Delay(1000);
+                    }
+                    await Task.Delay(1000);
 
-                            await channel.BasicPublishAsync("emailExchange", "emailRoute", false, attachmentProps, msgWithChecksum);
-
-                        }
-                        await channel.BasicPublishAsync("emailExchange", "emailRoute", false, endAttachmentProps, Encoding.UTF8.GetBytes("END_OF_FILE"));
-
-                    
-
-
-
+                    await channel.BasicPublishAsync(NormalExchangeName, NormalRoutingName, false, endAttachmentProps, Encoding.UTF8.GetBytes("END_OF_FILE"));
                 }
                 //传输邮件主体
+                await Task.Delay(1000);
 
-                await channel.BasicPublishAsync("emailExchange", "emailRoute", false, mailProps, dToBody);
-                await channel.BasicPublishAsync("emailExchange", "emailRoute",false,endEmailProps, Encoding.UTF8.GetBytes("END_OF_EMAIL"));
+                await channel.BasicPublishAsync(NormalExchangeName, NormalRoutingName, false, mailProps, dToBody);
+                await Task.Delay(1000);
+
+                await channel.BasicPublishAsync(NormalExchangeName, NormalRoutingName, false,endEmailProps, Encoding.UTF8.GetBytes("END_OF_EMAIL"));
             }
 
             catch (Exception ex)
@@ -84,16 +85,17 @@ namespace MQMailSender.Services
         private static byte[][] SplitFile(byte[] bytes)
         {
             int chunkCount = (int)Math.Ceiling((double)bytes.Length / MaxMessageSize);
+            //计算分割后的块数，作为二维数组的其中一维
             byte[][] chunks = new byte[chunkCount][];
 
             int offset = 0;
             for (int i = 0; i < chunkCount; i++)
             {
-                int chunkSize = Math.Min(MaxMessageSize, bytes.Length - offset);
+                int chunkSize = Math.Min(MaxMessageSize, bytes.Length - offset); //数组大小
                 byte[] chunk = new byte[chunkSize];
-                Array.Copy(bytes, offset, chunk, 0, chunkSize);
-                chunks[i] = chunk;
-                offset += chunkSize;
+                Array.Copy(bytes, offset, chunk, 0, chunkSize); //复制进数组
+                chunks[i] = chunk; //保存到二维数组
+                offset += chunkSize; //索引增加
             }
             return chunks;
         }
@@ -107,7 +109,8 @@ namespace MQMailSender.Services
                 byte[] checksumBytes = Encoding.UTF8.GetBytes(checksum);
                 byte[] message = new byte[chunk.Length + checksumBytes.Length];
                 Array.Copy(chunk, message, chunk.Length);//将chunk复制到message
-                Array.Copy(checksumBytes, 0, message, chunk.Length, checksumBytes.Length);//从message内消息块后一位开始，将校验码复制进message
+                Array.Copy(checksumBytes, 0, message, chunk.Length, checksumBytes.Length);
+                //从message内消息块后一位开始，将校验码复制进message
                 return message;
             }
         }

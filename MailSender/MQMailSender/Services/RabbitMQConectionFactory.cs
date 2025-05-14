@@ -7,10 +7,10 @@ namespace MailMQProducer.Services
 {
     public class RabbitMQConnectionFactory : IDisposable
     {
-        private readonly RabbitMqSettings _settings;
+        private readonly RabbitMQSettings _settings;
         private IConnection _connection { get; set; }
 
-        public RabbitMQConnectionFactory(IOptions<RabbitMqSettings> settings)
+        public RabbitMQConnectionFactory(IOptions<RabbitMQSettings> settings)
         {
             _settings = settings.Value;
         }

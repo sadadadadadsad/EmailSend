@@ -1,0 +1,11 @@
+C:\Users\14011\source\repos\HostApp\EmailPlugin.Contracts\bin\Debug\net8.0\EmailPlugin.Contracts.deps.json
+C:\Users\14011\source\repos\HostApp\EmailPlugin.Contracts\bin\Debug\net8.0\EmailPlugin.Contracts.dll
+C:\Users\14011\source\repos\HostApp\EmailPlugin.Contracts\bin\Debug\net8.0\EmailPlugin.Contracts.pdb
+C:\Users\14011\source\repos\HostApp\EmailPlugin.Contracts\obj\Debug\net8.0\EmailPlugin.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\14011\source\repos\HostApp\EmailPlugin.Contracts\obj\Debug\net8.0\EmailPlugin.Contracts.AssemblyInfoInputs.cache
+C:\Users\14011\source\repos\HostApp\EmailPlugin.Contracts\obj\Debug\net8.0\EmailPlugin.Contracts.AssemblyInfo.cs
+C:\Users\14011\source\repos\HostApp\EmailPlugin.Contracts\obj\Debug\net8.0\EmailPlugin.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\14011\source\repos\HostApp\EmailPlugin.Contracts\obj\Debug\net8.0\EmailPlugin.Contracts.dll
+C:\Users\14011\source\repos\HostApp\EmailPlugin.Contracts\obj\Debug\net8.0\refint\EmailPlugin.Contracts.dll
+C:\Users\14011\source\repos\HostApp\EmailPlugin.Contracts\obj\Debug\net8.0\EmailPlugin.Contracts.pdb
+C:\Users\14011\source\repos\HostApp\EmailPlugin.Contracts\obj\Debug\net8.0\ref\EmailPlugin.Contracts.dll
